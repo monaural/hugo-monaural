@@ -3,7 +3,7 @@
   <main class="main list">
 
     <ul class="posts">
-      {{ $paginator := .Paginate (where .Pages "Section" "posts") }}
+      {{ $paginator := .Paginate (where .Pages "Section" "post") }}
       {{ range $paginator.Pages }}
         <li class="posts_post">
           <a href="{{ .Permalink }}">

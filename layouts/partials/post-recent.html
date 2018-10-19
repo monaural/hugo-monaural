@@ -1,7 +1,7 @@
 <section class="recentPosts">
   <h3 class="title">Recent Posts</h3>
   <ul class="recentPosts_list">
-    {{ range first 5 (where .Site.Pages.ByDate.Reverse "Section" "posts") }}
+    {{ range first 5 (where .Site.Pages.ByDate.Reverse "Kind" "page") }}
       <li class="recentPosts_item">
         <a href="{{ .Permalink }}">
           {{ .Title }}
