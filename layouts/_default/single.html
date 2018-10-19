@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<main class="main single">
+  <article class="content">
+
+    {{ with .Params.thumbnail }}<img src="{{ . }}" alt="" class="thumbnail">{{ end }}
+
+    {{ .Content }}
+  </article>
+
+  {{ partial "post-related.html" . }}
+</main>
+
+{{ end }}

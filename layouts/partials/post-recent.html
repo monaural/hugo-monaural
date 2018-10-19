@@ -1,0 +1,13 @@
+<section class="recentPosts">
+  <h3 class="title">Recent Posts</h3>
+  <ul class="recentPosts_list">
+    {{ range first 5 (where .Site.Pages.ByDate.Reverse "Section" "posts") }}
+      <li class="recentPosts_item">
+        <a href="{{ .Permalink }}">
+          {{ .Title }}
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format .Site.Params.dateFormat }}</time>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</section>

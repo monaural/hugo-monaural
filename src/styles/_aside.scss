@@ -1,0 +1,34 @@
+.aside {
+  section:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+
+  p {
+    font-size: $fz-small;
+    line-height: $lh-paragraph;
+  }
+
+  .recentPosts {
+    line-height: $lh-title;
+    a {
+      @extend %a-defaultColor;
+    }
+  }
+  .recentPosts_item {
+    margin-bottom: 1.5rem;
+    time {
+      display: block;
+      font-size: $fz-small;
+      margin-top: .5rem;
+    }
+  }
+
+  .popularTags {
+    .tags {
+      line-height: $lh-paragraph;
+      a {
+        @extend %a-defaultColor;
+      }
+    }
+  }
+}
