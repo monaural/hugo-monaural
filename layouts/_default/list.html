@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-  <main class="main list">
+  <div class="list">
 
     <ul class="posts">
       {{ $paginator := .Paginate (where .Pages "Section" "post") }}
@@ -25,6 +25,6 @@
 
     {{ partial "pagination.html" . }}
 
-  </main>
+  </div>
 
 {{ end }}

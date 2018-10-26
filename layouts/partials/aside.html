@@ -1,8 +1,8 @@
 <aside class="aside">
-  {{ .Site.Params.additionalContents.beforeAside | safeHTML }}
+  {{ partial "additional/aside-before.html" . }}
 
   {{ partial "post-recent.html" . }}
   {{ partial "popular-tags.html" . }}
 
-  {{ .Site.Params.additionalContents.afterAside | safeHTML }}
+  {{ partial "additional/aside-after.html" . }}
 </aside>

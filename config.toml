@@ -6,9 +6,3 @@ dateFormat = "2006.01.02.15:04"
 [params.paginator]
 prev = "newer post"
 next = "older post"
-
-
-[params.additionalContents]
-afterHead = ''
-beforeFooter = ''
-afterFooter = ''

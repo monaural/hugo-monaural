@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-<main class="main single">
+<div class="single">
   <article class="content">
 
     {{ with .Params.thumbnail }}<img src="{{ . }}" alt="" class="thumbnail">{{ end }}
@@ -9,6 +9,6 @@
   </article>
 
   {{ partial "post-related.html" . }}
-</main>
+</div>
 
 {{ end }}

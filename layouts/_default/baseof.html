@@ -9,7 +9,13 @@
 <div class="container">
   {{ partial "header.html" . }}
 
-  {{ block "main" . }}{{ end }}
+  <main class="main">
+    {{ partial "additional/main-before.html" . }}
+
+    {{ block "main" . }}{{ end }}
+
+    {{ partial "additional/main-after.html" . }}
+  </main>
 
   {{ partial "aside.html" . }}
 
