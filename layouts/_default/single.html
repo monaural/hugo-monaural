@@ -3,7 +3,7 @@
 <div class="single">
   <article class="content">
 
-    {{ with .Params.thumbnail }}<img src="{{ . }}" alt="" class="thumbnail">{{ end }}
+    {{ if and (.Params.thumbnail) (not .Params.no_thumbnail) }}<img src="{{ .Params.thumbnail }}" alt="" class="thumbnail">{{ end }}
 
     {{ .Content }}
   </article>
