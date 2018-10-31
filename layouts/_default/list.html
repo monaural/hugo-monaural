@@ -14,7 +14,7 @@
             {{ partial "postmeta/pubtime.html" . }}
 
             <div class="post_summary">
-              {{ .Summary }}{{ if .Truncated }}……{{ end }}
+              {{ partial "postmeta/description.html" . }}
             </div>
 
             {{ partial "postmeta/tags.html" . }}
