@@ -21,7 +21,7 @@
     {{ else if .IsPage }}
       <h1 class="title">{{ .Title }}</h1>
       <div class="meta">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format .Site.Params.dateFormat }}</time>
+        {{ partial "postmeta/pubtime.html" . }}
         {{ partial "postmeta/tags.html" . }}
       </div>
     {{ else }}

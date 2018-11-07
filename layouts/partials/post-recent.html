@@ -5,7 +5,7 @@
       <li class="recentPosts_item">
         <a href="{{ .Permalink }}">
           {{ .Title }}
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format .Site.Params.dateFormat }}</time>
+          {{ partial "postmeta/pubtime.html" . }}
         </a>
       </li>
     {{ end }}
