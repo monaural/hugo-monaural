@@ -33,5 +33,19 @@
         @extend %a-defaultColor;
       }
     }
+
+    .tag {
+      font-weight: bold;
+      font-size: 120%;
+    }
+    .tag:nth-child(5) ~ .tag {
+      font-size: 100%;
+    }
+    .tag:nth-child(10) ~ .tag {
+      font-weight: normal;
+    }
+    .tag:nth-child(20) ~ .tag {
+      font-size: 90%;
+    }
   }
 }

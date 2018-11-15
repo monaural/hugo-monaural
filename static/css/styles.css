@@ -841,6 +841,23 @@ ul {
   line-height: 1.8;
 }
 
+.aside .popularTags .tag {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.aside .popularTags .tag:nth-child(5) ~ .tag {
+  font-size: 100%;
+}
+
+.aside .popularTags .tag:nth-child(10) ~ .tag {
+  font-weight: normal;
+}
+
+.aside .popularTags .tag:nth-child(20) ~ .tag {
+  font-size: 90%;
+}
+
 .footer {
   text-align: center;
   padding: 6rem 0 4rem;
