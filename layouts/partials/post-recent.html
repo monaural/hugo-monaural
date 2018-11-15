@@ -4,7 +4,7 @@
     {{ range first 5 (where .Site.Pages.ByDate.Reverse "Kind" "page") }}
       <li class="recentPosts_item">
         <a href="{{ .Permalink }}">
-          {{ .Title }}
+          <div class="post_title">{{ .Title }}</div>
           {{ partial "postmeta/pubtime.html" . }}
         </a>
       </li>

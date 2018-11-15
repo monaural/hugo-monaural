@@ -808,17 +808,24 @@ ul {
   height: 100%;
 }
 
+.aside {
+  font-size: 14px;
+}
+
 .aside section:not(:last-child) {
   margin-bottom: 6rem;
 }
 
 .aside p {
-  font-size: 14px;
   line-height: 1.8;
 }
 
 .aside .recentPosts {
   line-height: 1.4;
+}
+
+.aside .recentPosts .post_title {
+  font-weight: bold;
 }
 
 .aside .recentPosts_item {
@@ -827,7 +834,6 @@ ul {
 
 .aside .recentPosts_item time {
   display: block;
-  font-size: 14px;
   margin-top: .5rem;
 }
 

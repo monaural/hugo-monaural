@@ -1,10 +1,11 @@
 .aside {
+  font-size: $fz-small;
+
   section:not(:last-child) {
     margin-bottom: 6rem;
   }
 
   p {
-    font-size: $fz-small;
     line-height: $lh-paragraph;
   }
 
@@ -13,12 +14,14 @@
     a {
       @extend %a-defaultColor;
     }
+    .post_title {
+      font-weight: bold;
+    }
   }
   .recentPosts_item {
     margin-bottom: 1.5rem;
     time {
       display: block;
-      font-size: $fz-small;
       margin-top: .5rem;
     }
   }
