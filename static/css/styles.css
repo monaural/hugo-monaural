@@ -599,6 +599,10 @@ ul {
   vertical-align: bottom;
 }
 
+.header .hero .meta {
+  font-size: 14px;
+}
+
 @media screen and (min-width: 768px) {
   .list .posts {
     display: -webkit-box;
@@ -647,6 +651,14 @@ ul {
   padding-top: 42.55319149%;
   background-size: cover;
   background-position: center;
+}
+
+.list .posts .tags a {
+  color: #26d;
+}
+
+.list .posts .tags a:hover {
+  color: #6af;
 }
 
 .single {

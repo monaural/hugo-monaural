@@ -44,5 +44,9 @@
         @extend %a-defaultColor;
       }
     }
+
+    .meta {
+      font-size: $fz-small;
+    }
   }
 }

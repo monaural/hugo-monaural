@@ -40,5 +40,12 @@
       background-size: cover;
       background-position: center;
     }
+
+    .tags a {
+      color: $color-link;
+      &:hover {
+        color: $color-link-hover;
+      }
+    }
   }
 }
